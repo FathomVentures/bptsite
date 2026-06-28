@@ -19,7 +19,7 @@
     <title>Black Phoenix Tech | Bespoke Apps & Tech Solutions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oxanium:wght@600;700;800&family=Orbitron:wght@600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <style>
       /* Offset anchor jumps so the sticky header doesn't clip section headings */
@@ -38,10 +38,19 @@
       .brand__mark { background: transparent; box-shadow: none; width: auto; height: auto; }
       .brand__logo { width: auto; height: 34px; }
 
-      /* Match site headings to the logo's Spy Agency style using Oxanium */
-      .brand__name, .hero__title, h2, .feature h3, .case h3, .panel h3 {
-        font-family: 'Oxanium', Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-        font-weight: 800;
+      /* Brand fonts — the real logo typefaces */
+      @font-face { font-family: 'Spy Agency'; src: url('spyagency.woff') format('woff'); font-weight: 400; font-style: normal; font-display: swap; }
+      @font-face { font-family: 'LEMON MILK'; src: url('lemonmilk-medium.woff') format('woff'); font-weight: 500; font-style: normal; font-display: swap; }
+
+      /* Headings + brand wordmark: Spy Agency (the logo title font, all-caps) */
+      .brand__name, .hero__title, h2, .feature h3, .case h3, .panel h3, .footer__brand {
+        font-family: 'Spy Agency', Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+      }
+      /* UI labels: LEMON MILK (the logo tagline font) */
+      .nav__link, .button, .contactCard__title {
+        font-family: 'LEMON MILK', Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       }
     </style>
   </head>
