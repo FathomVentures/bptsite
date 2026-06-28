@@ -33,6 +33,10 @@
       #contact .contactCard { text-align: left; }
       #contact .contact-cta { margin-top: 1.5rem; }
       @media (max-width: 640px) { #contact .contactCards { grid-template-columns: 1fr; } }
+
+      /* Header brand mark: show the new phoenix cleanly (no gradient box) */
+      .brand__mark { background: transparent; box-shadow: none; width: auto; height: auto; }
+      .brand__logo { width: auto; height: 34px; }
     </style>
   </head>
   <body>
@@ -42,7 +46,7 @@
       <div class="container header__inner">
         <a class="brand" href="#top" aria-label="Black Phoenix Tech home">
           <span class="brand__mark" aria-hidden="true">
-            <img class="brand__logo" src="Logo_trans.png" alt="" />
+            <img class="brand__logo" src="logo-mark.png" alt="" />
           </span>
           <span class="brand__name">Black Phoenix Tech</span>
         </a>
@@ -69,7 +73,7 @@
           <div class="hero__copy">
             <h1 class="hero__title">Bespoke Tech, Built Around Your Business</h1>
             <p class="hero__subtitle">
-              We design websites, apps, and automations that make technology simple, affordable, and genuinely useful, so you can spend less time wrestling with tools and more time running your business. Clear pricing. Plain English. Real support before, during, and after launch.
+              We design websites, apps, and automations that make technology simple, affordable, and genuinely useful, so you can spend less time wrestling with tools and more time running your business. Clear pricing. Real support before, during, and after launch.
             </p>
 
             <div class="hero__cta">
@@ -79,7 +83,7 @@
           </div>
 
           <div class="hero__media" aria-hidden="true">
-            <img class="hero__logo" src="Logo_trans.png" alt="" />
+            <img class="hero__logo" src="logo-hero.png" alt="Black Phoenix Tech" />
           </div>
         </div>
       </section>
