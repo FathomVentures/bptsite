@@ -3,24 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Black Phoenix Tech builds bespoke websites, apps, and automations for small service businesses — clear pricing, plain English, real support before and after launch." />
+    <meta name="description" content="Black Phoenix Tech builds bespoke websites, apps, and automations for small service businesses. Clear pricing, plain English, real support before and after launch." />
     <meta name="theme-color" content="#070713" />
     <link rel="canonical" href="https://blackphoenixtech.com/" />
     <link rel="icon" href="logo.png" />
     <meta property="og:title" content="Black Phoenix Tech | Bespoke Apps & Tech Solutions" />
-    <meta property="og:description" content="Bespoke websites, apps, and automations for small service businesses — simple, affordable, and built around your business." />
+    <meta property="og:description" content="Bespoke websites, apps, and automations for small service businesses. Simple, affordable, and built around your business." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://blackphoenixtech.com/" />
     <meta property="og:image" content="https://blackphoenixtech.com/logo.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Black Phoenix Tech | Bespoke Apps & Tech Solutions" />
-    <meta name="twitter:description" content="Bespoke websites, apps, and automations for small service businesses — simple, affordable, and built around your business." />
+    <meta name="twitter:description" content="Bespoke websites, apps, and automations for small service businesses. Simple, affordable, and built around your business." />
     <meta name="twitter:image" content="https://blackphoenixtech.com/logo.png" />
     <title>Black Phoenix Tech | Bespoke Apps & Tech Solutions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Offset anchor jumps so the sticky header doesn't clip section headings */
+      html { scroll-padding-top: 88px; }
+      :where(#top, #services, #about, #how, #work, #contact) { scroll-margin-top: 88px; }
+
+      /* Contact section (form removed, centered layout) */
+      #contact .contact-wrap { max-width: 760px; margin: 0 auto; text-align: center; }
+      #contact .contact-lead { color: var(--muted); font-size: 1.04rem; max-width: 60ch; margin: 0 auto; }
+      #contact .contactCards { grid-template-columns: 1fr 1fr; margin-top: 1.4rem; }
+      #contact .contactCard { text-align: left; }
+      #contact .contact-cta { margin-top: 1.5rem; }
+      @media (max-width: 640px) { #contact .contactCards { grid-template-columns: 1fr; } }
+    </style>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -56,7 +69,7 @@
           <div class="hero__copy">
             <h1 class="hero__title">Bespoke Tech, Built Around Your Business</h1>
             <p class="hero__subtitle">
-              We design websites, apps, and automations that make technology simple, affordable, and genuinely useful — so you can spend less time wrestling with tools and more time running your business. Clear pricing. Plain English. Real support before, during, and after launch.
+              We design websites, apps, and automations that make technology simple, affordable, and genuinely useful, so you can spend less time wrestling with tools and more time running your business. Clear pricing. Plain English. Real support before, during, and after launch.
             </p>
 
             <div class="hero__cta">
@@ -80,7 +93,7 @@
           <div class="grid3">
             <article class="feature">
               <h3>Workflow Automation</h3>
-              <p>Automate the repetitive stuff — reminders, intake forms, follow-ups — so your tools do the busywork and you don’t.</p>
+              <p>Automate the repetitive stuff like reminders, intake forms, and follow-ups, so your tools do the busywork and you don’t.</p>
             </article>
             <article class="feature">
               <h3>Website Development</h3>
@@ -92,7 +105,7 @@
             </article>
             <article class="feature">
               <h3>Support &amp; Maintenance</h3>
-              <p>Updates, backups, and monitoring that keep your site secure and running — so you never have to think about it.</p>
+              <p>Updates, backups, and monitoring that keep your site secure and running, so you never have to think about it.</p>
             </article>
             <article class="feature">
               <h3>Trust &amp; Safety Support</h3>
@@ -107,7 +120,7 @@
           <div>
             <h2>About</h2>
             <p>
-              Black Phoenix Tech was built on one idea: technology should work for everyday people — especially entrepreneurs, creatives, and small business owners in Black and Brown communities.
+              Black Phoenix Tech was built on one idea: technology should work for everyday people, especially entrepreneurs, creatives, and small business owners in Black and Brown communities.
             </p>
             <p>
               Whether you're launching something new, growing what you've got, or just trying to keep up with the digital world, we're here with help that's clear, practical, and built around your vision.
@@ -135,15 +148,15 @@
 
           <div class="grid3">
             <article class="feature">
-              <h3>1 · Free Tech Check</h3>
+              <h3>1. Free Tech Check</h3>
               <p>A quick, no-pressure look at your site, booking, or workflow. We name two or three quick wins on the spot.</p>
             </article>
             <article class="feature">
-              <h3>2 · Clear Plan &amp; Flat Quote</h3>
+              <h3>2. Clear Plan &amp; Flat Quote</h3>
               <p>You get a simple proposal with a fixed price. No surprise bills, no meter running.</p>
             </article>
             <article class="feature">
-              <h3>3 · Build, Launch &amp; Support</h3>
+              <h3>3. Build, Launch &amp; Support</h3>
               <p>We build it, walk you through it, and stick around to keep it running.</p>
             </article>
           </div>
@@ -169,11 +182,11 @@
                 </article>
                 <article class="case carousel__slide" data-carousel-slide>
                   <h3>Keep your calendar full</h3>
-                  <p>We build custom booking apps for barbers, nail techs, and stylists that let clients book in a few taps — cutting no-shows and ending the scheduling chaos.</p>
+                  <p>We build custom booking apps for barbers, nail techs, and stylists that let clients book in a few taps, cutting no-shows and ending the scheduling chaos.</p>
                 </article>
                 <article class="case carousel__slide" data-carousel-slide>
                   <h3>Know what’s working</h3>
-                  <p>We set up easy-to-read dashboards that show shop owners their best-sellers, busiest times, and trends — so you can make smarter decisions without the guesswork.</p>
+                  <p>We set up easy-to-read dashboards that show shop owners their best-sellers, busiest times, and trends, so you can make smarter decisions without the guesswork.</p>
                 </article>
                 <article class="case carousel__slide" data-carousel-slide>
                   <h3>Hands-off upkeep</h3>
@@ -193,11 +206,11 @@
                 </article>
                 <article class="case carousel__slide" data-carousel-slide>
                   <h3>One place for everything</h3>
-                  <p>We build branded client-portal apps for event planners and service providers — bookings, payments, and messages all in one place.</p>
+                  <p>We build branded client-portal apps for event planners and service providers: bookings, payments, and messages all in one place.</p>
                 </article>
                 <article class="case carousel__slide" data-carousel-slide>
                   <h3>Grow with real numbers</h3>
-                  <p>We give online sellers live dashboards to track traffic, sales, and trends — growth without needing to be a data expert.</p>
+                  <p>We give online sellers live dashboards to track traffic, sales, and trends, for growth without needing to be a data expert.</p>
                 </article>
                 <article class="case carousel__slide" data-carousel-slide>
                   <h3>Show up on Google</h3>
@@ -224,11 +237,14 @@
       </section>
 
       <section class="section" id="contact">
-        <div class="container split">
-          <div>
+        <div class="container">
+          <div class="section__head">
             <h2>Contact</h2>
-            <p>
-              Tell us what you’re building (or what’s broken). Your first 15-minute tech check is free — we’ll point out a couple of quick wins whether or not we work together.
+          </div>
+
+          <div class="contact-wrap">
+            <p class="contact-lead">
+              Tell us what you’re building (or what’s broken). Your first 30-minute tech check is free. We’ll point out a couple of quick wins whether or not we work together.
             </p>
 
             <div class="contactCards">
@@ -241,10 +257,10 @@
                 <span class="contactCard__text">Contact@BlackPhoenixTech.com</span>
               </a>
             </div>
-          </div>
 
-          <div class="form airtableForm airtableForm--brand" aria-label="Contact form">
-            <iframe class="airtable-embed" src="https://airtable.com/embed/appaXbVc26Aj4nUAZ/pag67HRhEtrGhZcaj/form" title="Black Phoenix Tech contact form" loading="lazy" width="100%" height="533" style="background: transparent; border: 0;"></iframe>
+            <div class="contact-cta">
+              <a class="button" href="mailto:contact@blackphoenixtech.com?subject=Free%2030-Minute%20Tech%20Check">Book a Free Tech Check</a>
+            </div>
           </div>
         </div>
       </section>
