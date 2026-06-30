@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070713" />
+    <title>Black Phoenix Tech — Start Here</title>
+    <meta name="description" content="Custom tech you own. No platform fees, no cut of your sales. Book a free 30-minute tech check." />
+    <link rel="icon" href="logo.png" />
+    <style>
+      @font-face { font-family: 'Spy Agency'; src: url('spyagency.woff') format('woff'); font-weight: 400; font-display: swap; }
+      @font-face { font-family: 'LEMON MILK'; src: url('lemonmilk-medium.woff') format('woff'); font-weight: 500; font-display: swap; }
+      :root { --bg:#070713; --teal:#00f5d4; --pink:#f15bb5; --text:rgba(255,255,255,.92); --muted:rgba(255,255,255,.72); --border:rgba(255,255,255,.16); }
+      * { box-sizing: border-box; }
+      body {
+        margin:0; min-height:100vh; color:var(--text);
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        background:
+          radial-gradient(900px 600px at 18% 0%, rgba(241,91,181,.20), transparent 55%),
+          radial-gradient(800px 560px at 92% 8%, rgba(0,245,212,.16), transparent 55%),
+          var(--bg);
+        line-height:1.5; -webkit-text-size-adjust:100%;
+      }
+      .wrap { max-width: 540px; margin:0 auto; padding: 30px 22px 48px; text-align:center; }
+      .logo { width:min(300px,78%); height:auto; display:block; margin:6px auto 14px; }
+      .kicker { color:var(--muted); font-size:.95rem; margin:0 0 6px; }
+      h1 { font-family:'Spy Agency', Inter, sans-serif; font-weight:400; letter-spacing:.02em; font-size:2rem; margin:.2rem 0 .5rem; }
+      .sub { color:var(--muted); font-size:1.05rem; margin:0 auto 1.3rem; max-width:34ch; }
+      .points { list-style:none; padding:0; margin:0 auto 1.6rem; max-width:34ch; text-align:left; }
+      .points li { position:relative; padding-left:1.6rem; margin:.5rem 0; color:var(--muted); }
+      .points li::before { content:""; position:absolute; left:0; top:.45rem; width:.85rem; height:.85rem; border-radius:6px; background:linear-gradient(135deg,var(--teal),var(--pink)); }
+      .btn { display:flex; align-items:center; justify-content:center; gap:.5rem; width:100%; min-height:56px; padding:.9rem 1rem; margin:.55rem 0; border-radius:16px; font-weight:700; font-size:1.05rem; text-decoration:none; font-family:'LEMON MILK', Inter, sans-serif; }
+      .btn--primary { background:linear-gradient(135deg,var(--teal),var(--pink)); color:#06121a; box-shadow:0 10px 26px rgba(0,0,0,.3); }
+      .btn--ghost { background:rgba(255,255,255,.05); border:1px solid var(--border); color:var(--text); }
+      .note { color:var(--muted); font-size:.92rem; margin:1.2rem auto 0; max-width:36ch; }
+      .badge { display:inline-block; margin:1rem 0 0; padding:.4rem .8rem; border:1px solid rgba(0,245,212,.35); border-radius:999px; color:var(--teal); font-weight:700; font-size:.88rem; }
+      footer { color:var(--muted); font-size:.85rem; margin-top:1.8rem; }
+      a { color:var(--teal); }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <img class="logo" src="logo-hero.png" alt="Black Phoenix Tech" />
+      <p class="kicker">Thanks for scanning 👋</p>
+      <h1>Custom Tech You Own</h1>
+      <p class="sub">No platform fees. No cut of your sales. Built around exactly how you work.</p>
+
+      <ul class="points">
+        <li>Websites, booking apps &amp; automations that cut no-shows and fill your calendar.</li>
+        <li>Bespoke and yours to keep — not rented software that taxes your revenue.</li>
+        <li>Clear, flat pricing and real support before, during, and after launch.</li>
+      </ul>
+
+      <a class="btn btn--primary" href="tel:+13103591259">📞 Call (310) 359-1259</a>
+      <a class="btn btn--ghost" href="mailto:contact@blackphoenixtech.com?subject=Free%2030-Minute%20Tech%20Check">✉️ Email Us</a>
+      <a class="btn btn--ghost" href="contact.vcf">💾 Save My Contact</a>
+      <a class="btn btn--ghost" href="https://blackphoenixtech.com/#pricing">💡 See Services &amp; Pricing</a>
+
+      <p class="note">Your first 30-minute tech check is free — we'll point out a couple of quick wins whether or not we work together.</p>
+      <span class="badge">20% off for sole proprietors &amp; businesses under 2 years</span>
+
+      <footer>blackphoenixtech.com · Los Angeles &amp; Sacramento</footer>
+    </main>
+  </body>
+</html>
