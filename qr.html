@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Scan Me — Black Phoenix Tech</title>
+<style>
+@font-face{font-family:'Spy Agency';src:url('https://blackphoenixtech.com/spyagency.woff') format('woff');}
+@font-face{font-family:'LEMON MILK';src:url('https://blackphoenixtech.com/lemonmilk-medium.woff') format('woff');}
+*{box-sizing:border-box;}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+ font-family:Arial,Helvetica,sans-serif;color:#fff;text-align:center;padding:24px;
+ background:radial-gradient(60vh 40vh at 20% 0%, rgba(241,91,181,.22), transparent 55%),
+  radial-gradient(55vh 38vh at 90% 10%, rgba(0,245,212,.18), transparent 55%),#070713;}
+.brand{font-family:'Spy Agency',Arial;font-size:26px;letter-spacing:1px;margin-bottom:6px;}
+.scanme{font-family:'LEMON MILK',Arial;font-size:18px;letter-spacing:3px;color:#00f5d4;margin:0 0 18px;}
+.qrwrap{position:relative;background:#fff;padding:18px;border-radius:22px;box-shadow:0 16px 50px rgba(0,0,0,.45);display:inline-block;}
+.qr{width:min(64vw,330px);height:min(64vw,330px);display:block;}
+.qrlogo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:24%;height:24%;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 3px #fff;}
+.qrlogo img{width:90%;}
+.cap{font-size:17px;color:rgba(255,255,255,.92);margin-top:20px;}
+.url{font-size:15px;color:#00f5d4;margin-top:4px;}
+</style></head><body>
+  <div class="brand">BLACK PHOENIX TECH</div>
+  <div class="scanme">SCAN ME</div>
+  <div class="qrwrap">
+    <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=900x900&ecc=H&margin=6&color=0f0f22&bgcolor=ffffff&data=https%3A%2F%2Fblackphoenixtech.com%2Fstart.html%3Fref%3Dqr" alt="Scan to learn more"/>
+    <span class="qrlogo"><img src="https://blackphoenixtech.com/logo-mark.png" alt=""/></span>
+  </div>
+  <div class="cap">Free 30-minute tech check</div>
+  <div class="url">blackphoenixtech.com</div>
+</body></html>
