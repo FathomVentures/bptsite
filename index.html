@@ -22,11 +22,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <style>
-      /* Offset anchor jumps so the sticky header doesn't clip section headings */
       html { scroll-padding-top: 88px; }
-      :where(#top, #services, #about, #how, #work, #contact) { scroll-margin-top: 88px; }
+      :where(#top, #services, #about, #how, #work, #pricing, #contact) { scroll-margin-top: 88px; }
 
-      /* Contact section (form removed, centered layout) */
       #contact .contact-wrap { max-width: 760px; margin: 0 auto; text-align: center; }
       #contact .contact-lead { color: var(--muted); font-size: 1.04rem; max-width: 60ch; margin: 0 auto; }
       #contact .contactCards { grid-template-columns: 1fr 1fr; margin-top: 1.4rem; }
@@ -34,24 +32,32 @@
       #contact .contact-cta { margin-top: 1.5rem; }
       @media (max-width: 640px) { #contact .contactCards { grid-template-columns: 1fr; } }
 
-      /* Header brand mark: show the new phoenix cleanly (no gradient box) */
       .brand__mark { background: transparent; box-shadow: none; width: auto; height: auto; }
       .brand__logo { width: auto; height: 34px; }
 
-      /* Brand fonts — the real logo typefaces */
       @font-face { font-family: 'Spy Agency'; src: url('spyagency.woff') format('woff'); font-weight: 400; font-style: normal; font-display: swap; }
       @font-face { font-family: 'LEMON MILK'; src: url('lemonmilk-medium.woff') format('woff'); font-weight: 500; font-style: normal; font-display: swap; }
 
-      /* Headings + brand wordmark: Spy Agency (the logo title font, all-caps) */
       .brand__name, .hero__title, h2, .feature h3, .case h3, .panel h3, .footer__brand {
         font-family: 'Spy Agency', Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
         font-weight: 400;
         letter-spacing: 0.02em;
       }
-      /* UI labels: LEMON MILK (the logo tagline font) */
       .nav__link, .button, .contactCard__title {
         font-family: 'LEMON MILK', Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       }
+
+      #pricing .pricing-lead { color: var(--muted); max-width: 72ch; margin: 0 0 1.6rem; }
+      #pricing .price-card { display: flex; flex-direction: column; }
+      #pricing .price { font-family: 'Spy Agency', Inter, sans-serif; font-size: 1.45rem; color: var(--brand); margin: 0.15rem 0 0.55rem; letter-spacing: 0.02em; }
+      #pricing .price-per { font-size: 0.85rem; color: var(--muted2); }
+      #pricing .price-tag { font-family: Inter, sans-serif; font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted2); border: 1px solid var(--border); border-radius: 999px; padding: 0.12rem 0.5rem; vertical-align: middle; margin-left: 0.4rem; }
+      #pricing .price-card--alacarte .price { color: var(--brand2); }
+      #pricing .pricing-extras { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.2rem; }
+      #pricing .pricing-highlight { border-color: rgba(0, 245, 212, 0.28); }
+      #pricing .pricing-highlight strong { color: var(--brand); }
+      #pricing .pricing-cta { margin-top: 1.7rem; text-align: center; }
+      @media (max-width: 760px) { #pricing .pricing-extras { grid-template-columns: 1fr; } }
     </style>
   </head>
   <body>
@@ -76,6 +82,7 @@
             <a class="nav__link" href="#about">About</a>
             <a class="nav__link" href="#services">Services</a>
             <a class="nav__link" href="#work">What We Can Do</a>
+            <a class="nav__link" href="#pricing">Pricing</a>
             <a class="button button--small" href="#contact">Connect With Us</a>
           </div>
         </nav>
@@ -112,7 +119,7 @@
           <div class="grid3">
             <article class="feature">
               <h3>Workflow Automation</h3>
-              <p>Automate the repetitive stuff like reminders, intake forms, and follow-ups, so your tools do the busywork and you don’t.</p>
+              <p>Automate the repetitive stuff like reminders, intake forms, and follow-ups, so your tools do the busywork and you don&rsquo;t.</p>
             </article>
             <article class="feature">
               <h3>Website Development</h3>
@@ -152,7 +159,7 @@
             <ul class="checklist">
               <li>Solutions made for you: we build tech that fits your business, not one-size-fits-all templates.</li>
               <li>Plain communication: transparency, regular updates, and zero jargon.</li>
-              <li>Support that sticks around: we’re with you before, during, and long after launch.</li>
+              <li>Support that sticks around: we&rsquo;re with you before, during, and long after launch.</li>
             </ul>
             <a class="button button--ghost" href="#contact">Ask a question</a>
           </div>
@@ -204,7 +211,7 @@
                   <p>We build custom booking apps for barbers, nail techs, and stylists that let clients book in a few taps, cutting no-shows and ending the scheduling chaos.</p>
                 </article>
                 <article class="case carousel__slide" data-carousel-slide>
-                  <h3>Know what’s working</h3>
+                  <h3>Know what&rsquo;s working</h3>
                   <p>We set up easy-to-read dashboards that show shop owners their best-sellers, busiest times, and trends, so you can make smarter decisions without the guesswork.</p>
                 </article>
                 <article class="case carousel__slide" data-carousel-slide>
@@ -255,6 +262,66 @@
         </div>
       </section>
 
+      <section class="section section--alt" id="pricing">
+        <div class="container">
+          <div class="section__head">
+            <h2>Pricing</h2>
+          </div>
+
+          <p class="pricing-lead">
+            Clear, flat pricing. No surprise bills, no platform fees, no cut of your sales. Every build is scoped to you, so these are starting ranges. Most clients qualify for 20% off (see below).
+          </p>
+
+          <div class="grid3 pricing-grid">
+            <article class="feature price-card">
+              <h3>Launch Site</h3>
+              <p class="price">$900&ndash;1,800</p>
+              <p>Clean, mobile-ready site with a booking link and basic SEO.</p>
+            </article>
+            <article class="feature price-card">
+              <h3>Booking Builder</h3>
+              <p class="price">$600&ndash;1,500</p>
+              <p>Online booking and reminders that cut no-shows.</p>
+            </article>
+            <article class="feature price-card">
+              <h3>Automation Sprint</h3>
+              <p class="price">$750&ndash;2,000</p>
+              <p>Automate one painful workflow from end to end.</p>
+            </article>
+            <article class="feature price-card">
+              <h3>Custom App &amp; Portal</h3>
+              <p class="price">From $3,000</p>
+              <p>A branded app or client portal, built around exactly how you work.</p>
+            </article>
+            <article class="feature price-card">
+              <h3>Care Plan <span class="price-tag">optional</span></h3>
+              <p class="price">$99&ndash;299<span class="price-per">/mo</span></p>
+              <p>Hosting, updates, and support. Cancel anytime, and you always own your build.</p>
+            </article>
+            <article class="feature price-card price-card--alacarte">
+              <h3>&Agrave; la carte</h3>
+              <p class="price">Just what you need</p>
+              <p>Website only (from $700), SEO tune-up (from $300), booking setup (from $450), single automation (from $400).</p>
+            </article>
+          </div>
+
+          <div class="pricing-extras">
+            <div class="panel pricing-highlight">
+              <h3>Collective Builds</h3>
+              <p>Custom apps, made affordable. Pool together with other operators for one custom app, then each of you adds your own branding so every version looks bespoke. Roughly $500 a person instead of $3,000, and your whole salon becomes a community.</p>
+            </div>
+            <div class="panel pricing-highlight">
+              <h3>Discounts</h3>
+              <p><strong>20% off</strong> for sole proprietors and for businesses formed within the last 2 years, plus other available discounts. Just ask.</p>
+            </div>
+          </div>
+
+          <div class="pricing-cta">
+            <a class="button" href="#contact">Get a Free Tech Check &amp; Flat Quote</a>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="contact">
         <div class="container">
           <div class="section__head">
@@ -263,7 +330,7 @@
 
           <div class="contact-wrap">
             <p class="contact-lead">
-              Tell us what you’re building (or what’s broken). Your first 30-minute tech check is free. We’ll point out a couple of quick wins whether or not we work together.
+              Tell us what you&rsquo;re building (or what&rsquo;s broken). Your first 30-minute tech check is free. We&rsquo;ll point out a couple of quick wins whether or not we work together.
             </p>
 
             <div class="contactCards">
@@ -293,10 +360,11 @@
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#work">What We Can Do</a>
+            <a href="#pricing">Pricing</a>
             <a href="#contact">Contact</a>
           </div>
         </div>
-        <div class="footer__fineprint">© 2026 Black Phoenix Tech. All rights reserved.</div>
+        <div class="footer__fineprint">&copy; 2026 Black Phoenix Tech. All rights reserved.</div>
       </div>
     </footer>
 
